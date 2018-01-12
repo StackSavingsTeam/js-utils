@@ -2,4 +2,4 @@
 
 const log = require('./utils').log()
 
-log.info('hola2')
+log.error('hola2')
