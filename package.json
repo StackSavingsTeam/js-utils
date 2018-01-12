@@ -1,0 +1,22 @@
+{
+  "name": "@stacksavings/stacksavings-utils",
+  "version": "1.0.6",
+  "description": "Utility module",
+  "main": "utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StackSavingsTeam/js-utils.git"
+  },
+  "author": "Stacksavings (https://site.stacksavings.com)",
+  "maintainers": [
+    "dmolina101 <dmolina101@gmail.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StackSavingsTeam/js-utils/issues"
+  },
+  "homepage": "https://github.com/StackSavingsTeam/js-utils#readme"
+}
