@@ -7,6 +7,51 @@ module.exports.toTimeStampUnix = (dateUS) => {
 }
 
 module.exports.log = () => {
+
+  function logger(){
+    const winston = require('winston')
+    const fs = require('fs')
+    const logDir = 'logs'
+    const tsFormat = () => (new Date()).toLocaleTimeString()
+
+    if (!fs.existsSync(logDir)) {
+      fs.mkdirSync(logDir)
+    }
+
+    const logger = new (winston.Logger)({
+      transports: [
+        new (winston.transports.Console)({
+          timestamp: tsFormat,
+          colorize: true,
+          level: 'info'
+        }),
+        new (require('winston-daily-rotate-file'))({
+          filename: `${logDir}/-info.log`,
+          timestamp: tsFormat,
+          datePattern: 'yyyy-MM-dd',
+          prepend: true,
+          colorize: true,
+          level: 'info'
+        })
+      ]
+    })
+    return logger
+  }
+
+  return {
+    info: (text) => {
+      const log = logger()
+      log.info(text)
+    },
+    error: (text) => {
+      const log = logger()
+      log.error(text)
+    }
+  }
+}
+
+
+/*default: () => {
   const winston = require('winston')
   const fs = require('fs')
   const logDir = 'logs'
@@ -33,8 +78,12 @@ module.exports.log = () => {
       })
     ]
   })
-  return {
-    info: (text) => {logger.info(text)},
-    error: (text) => {logger.error(text)}
-  }
-}
+  return logger
+},
+info: (text) => {
+  const logger = super(log.default())
+  logger.info(text)
+},
+error: (text) => {
+  constructor.error(text)
+}*/

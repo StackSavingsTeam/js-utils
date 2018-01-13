@@ -1,9 +1,10 @@
 {
-  "name": "@stacksavings/stacksavings-utils",
-  "version": "1.0.6",
+  "name": "@stacksavings/utils",
+  "version": "1.0.0",
   "description": "Utility module",
   "main": "utils.js",
   "scripts": {
+    "install":"npm i stacksavings-utils",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
