@@ -1,6 +1,6 @@
 {
   "name": "@stacksavings/utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Utility module",
   "main": "utils.js",
   "scripts": {
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/StackSavingsTeam/js-utils#readme",
    "dependencies" : {
-     "winston": "2.4.0"
+     "winston": "2.4.0",
+     "winston-daily-rotate-file": "1.7.2"
   }
 
 }
