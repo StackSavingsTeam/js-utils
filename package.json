@@ -1,6 +1,6 @@
 {
   "name": "@stacksavings/utils",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "Utility module",
   "main": "utils.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "Stacksavings (https://site.stacksavings.com)",
   "maintainers": [
     "dmolina101 <dmolina101@gmail.com>"
-  ], 
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/StackSavingsTeam/js-utils/issues"
