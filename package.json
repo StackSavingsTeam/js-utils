@@ -1,6 +1,6 @@
 {
   "name": "@stacksavings/utils",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Utility module",
   "main": "utils.js",
   "scripts": {
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/StackSavingsTeam/js-utils/issues"
   },
-  "homepage": "https://github.com/StackSavingsTeam/js-utils#readme"
+  "homepage": "https://github.com/StackSavingsTeam/js-utils#readme",
+   "dependencies" : {
+     "winston": "2.4.0"
+  }
+
 }
