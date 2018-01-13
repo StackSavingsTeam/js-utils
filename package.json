@@ -4,7 +4,6 @@
   "description": "Utility module",
   "main": "utils.js",
   "scripts": {
-    "install":"npm i stacksavings-utils",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
