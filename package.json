@@ -14,7 +14,7 @@
   "author": "Stacksavings (https://site.stacksavings.com)",
   "maintainers": [
     "dmolina101 <dmolina101@gmail.com>"
-  ],
+  ], 
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/StackSavingsTeam/js-utils/issues"
