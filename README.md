@@ -59,6 +59,13 @@ logger.info(TimeStamp.toTimeStampUnix(20180115))
 ```
 1515990600
 ```
+
+### Test
+
+```bash
+ $ npm run test
+```
+ 
 ### Creators
 
 <b>Stacksavings</b>
