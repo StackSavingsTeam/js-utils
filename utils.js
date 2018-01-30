@@ -6,6 +6,13 @@ module.exports.toTimeStampUnix = (dateUS) => {
   return moment(strDate.slice(0, 4) + '/' + strDate.slice(4, 6) + '/' + strDate.slice(6, 8), 'YYYY/M/D').unix()
 }
 
+module.exports.todayTimeStampUnix = () => {
+  const moment = require('moment')
+  let hoy = new Date()
+  const strDate = hoy.getFullYear().toString() + (hoy.getMonth() + 1 ).toString() + hoy.getDate().toString() 
+  return moment(strDate.slice(0, 4) + '/' + strDate.slice(4, 6) + '/' + strDate.slice(6, 8), 'YYYY/M/D').unix()
+}
+
 module.exports.log = () => {
 
   function logger(){

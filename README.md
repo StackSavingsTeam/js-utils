@@ -59,6 +59,21 @@ logger.info(TimeStamp.toTimeStampUnix(20180115))
 ```
 1515990600
 ```
+* <b>todayTimeStampUnix:</b>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Get timestamp unix from date today.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>Example to call it:</b>
+
+```
+const logger = require('@stacksavings/utils').log()
+const TimeStampToday = require('@stacksavings/utils')
+
+logger.info(TimeStamp.todayTimeStampUnix())
+```
+&nbsp;&nbsp;&nbsp;&nbsp;<b>Output:</b>
+```
+1544328000 //date 2018/1/29
+```
 
 ### Test
 
@@ -75,3 +90,6 @@ logger.info(TimeStamp.toTimeStampUnix(20180115))
 
 <b>David Molina</b>
 * <a href="https://dmolina101.github.io">https://dmolina101.github.io</a>
+
+<b>Hendrix Roa</b>
+* <a href="https://hendrixroa.github.io">Hendrix Roa</a>
